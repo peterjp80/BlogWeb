@@ -10,22 +10,7 @@ function compileToComponent(template: string) {
         directives: [ToggleWellComponent, CodeViewComponent, NoteComponent]
     })
     class DynamicComponent {
-        noteType = NoteType;
-        wellsDisplayed: number[] = [];
-
-        toggleWell(i: number) {
-            let index = this.wellsDisplayed.indexOf(i);
-            if (index >= 0) {
-                this.wellsDisplayed.splice(index, 1);
-            }
-            else {
-                this.wellsDisplayed.push(i);
-            }
-        }
-
-        showWell(i: number): boolean {
-            return this.wellsDisplayed.includes(i);
-        }
+        NoteType = NoteType;
     };
     return DynamicComponent;
 }

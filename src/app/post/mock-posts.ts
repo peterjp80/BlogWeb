@@ -27,7 +27,7 @@ export class AppComponent {
         <blog-note title="Note">
             This is a note with a title.
         </blog-note>
-        <blog-note title="Idea" [noteType]="noteType.Info">
+        <blog-note title="Idea" [noteType]="NoteType.Info">
             This is an Idea
         </blog-note>
         `,
