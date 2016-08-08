@@ -3,7 +3,7 @@ import { Post } from './post';
 export const posts: Post[] = [
     {
         id: 'test-post',
-        title: 'My First Post',
+        title: 'My First Post Yay!',
         html: `
         <blog-code-view language="typescript">
 import { Component } from '@angular/core';

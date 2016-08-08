@@ -4,6 +4,7 @@
   "scripts": {
     "start": "webpack-dev-server --inline --progress --port 8080",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
+    "deploy": "gulp deploy",
     "test": "karma start",
     "postinstall": "typings install",
     "tsc": "tsc",
@@ -40,6 +41,9 @@
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
+    "gulp": "^3.9.1",
+    "gulp-deploy-git": "^0.5.3",
+    "gulp-gh-pages": "^0.5.4",
     "html-loader": "^0.4.3",
     "html-webpack-plugin": "^2.15.0",
     "jasmine-core": "^2.4.1",
